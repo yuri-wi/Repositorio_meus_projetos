@@ -1,0 +1,72 @@
+while True:
+    print('Escolhar uma das opções')
+    print('[BRL] Real')
+    print('[USD] Dólar Americano')
+    print('[CAD] Dólar Canadense')
+    print('[EUR] Euro')
+    print('[S] Sair')
+    valor=float(input('Diga um valor: '))
+    Opcao=(input('Escolha uma das opçoes:'))
+    if Opcao=='BRL':
+        print('Quer converter para qual moeda?')
+        print('[USD] Dólar Americano')
+        print('[CAD] Dólar Canadense')
+        print('[EUR] Euro')
+        escolha=(input('Escolhar uma das opções'))
+        if escolha=='USD':
+            con1= valor*0.20
+            print('O valor {} convertendo para USD fica {:.2f}'.format(valor,con1))
+        elif escolha=='CAD':
+         con2= valor*0.28
+         print('O valor {} convertendo para CAD fica {:.2f}'.format(valor,con2))
+        elif escolha=='EUR':
+         con3= valor*0.17
+         print('O valor {} convertendo para EUR fica {:.2f}'.format(valor,con3))
+    elif Opcao=='USD':
+        print('Quer converter para qual moeda?')
+        print('[BRL] Real')
+        print('[CAD] Dólar canadena')
+        print('[EUR] Euro')
+        OQ=(input('Escolhar uma das opções:'))
+        if OQ=='BRL':
+            con4= valor*4.95
+            print('O valor {} convertendo para BRL fica {:.2f}'.format(valor,con4))
+        elif OQ=='CAD':
+            con5= valor*1.37
+            print('O valor {} convertendo para CAD fica {:.2f}'.format(valor,con5))
+        elif OQ=='EUR':
+            con6= valor*0.85
+            print('O valor {} convertendo para EUR fica {:.2f}'.format(valor,con6))
+    elif Opcao=='CAD':
+        print('Quer converter para qual moeda?')
+        print('[BRL] Real')
+        print('[USD] Dólar Americano')
+        print('[EUR] Euro')
+        M=(input('Escolhar uma das opções'))
+        if M=='BRL':
+            con7= valor*3.63
+            print('O valor {} convertendo para BRL fica {:.2f}'.format(valor,con7))
+        elif M=='USD':
+            con8= valor*0.73
+            print('O valor {} convertendo para USD fica {:.2f}'.format(valor,con8))
+        elif M=='EUR':
+            con9= valor*0.62
+            print('O valor {} convertendo para EUR fica {:.2f}'.format(valor,con9))
+    elif Opcao=='EUR':
+        print('Quer converter para qual moeda?')
+        print('[BRL] Real')
+        print('[USD] Dólar Americano')
+        print('[CAD] Dólar Canadena')
+        P=(input('Escolhar uma das opçoes'))
+        if P=='BRL':
+            con10= valor*5.83
+            print('O valor {} convertendo para BRL fica {:.2f}'.format(valor,con10))
+        elif P=='CAD':
+            con11= valor*1.61
+            print('O valor {} convertendo para CAD fica {:.2f}'.format(valor,con11))
+        elif P=='USD':
+            con12= valor*1.18
+            print('O valor {} convertendo para USD fica {:.2f}'.format(valor,con12))
+
+    elif Opcao=='S':
+        break
